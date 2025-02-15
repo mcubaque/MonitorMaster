@@ -88,4 +88,4 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENS
 
 ## Contacto
 
-Para cualquier pregunta o comentario, por favor contacta a [tu-email@dominio.com](mailto:tu-email@dominio.com).
+Para cualquier pregunta o comentario, por favor contacta a [tu-email@dominio.com](mailto:mcubaque@gmail.com).
