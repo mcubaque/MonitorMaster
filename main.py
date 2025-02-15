@@ -379,7 +379,7 @@ async def check_ram_usage():
             result = cursor.fetchone()
             if result:
                 ram_used_percent = float(result[0])  # Convertir Decimal a float
-                if ram_used_percent > 30:  # Cambia este valor para probar la alerta
+                if ram_used_percent > 50:  # Cambia este valor para probar la alerta
                     send_email_with_attachment(
                         "marco.cubaque@rithmxo.com",
                         f"Alerta de Uso de RAM en el servidor: {server}",
