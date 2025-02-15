@@ -335,11 +335,11 @@ username = os.getenv("DB_USERNAME")
 password = os.getenv("DB_PASSWORD")
 conn_str = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}"
 
-# Configuración SMTP
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587  # Usa 465 si prefieres SSL
-SMTP_USER = "notificacionesrithmxo@gmail.com"
-SMTP_PASSWORD = "zbeyjzhmdafyzvmj"
+# Configuración SMTP desde variables de entorno
+SMTP_SERVER = os.getenv("SMTP_SERVER")
+SMTP_PORT = int(os.getenv("SMTP_PORT"))
+SMTP_USER = os.getenv("SMTP_USER")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 
 def send_email_with_attachment(to_email, subject, body, attachment_path=None):
     msg = MIMEMultipart()
