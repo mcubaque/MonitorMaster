@@ -74,6 +74,8 @@ MonitorMaster es una aplicación de monitoreo de servidores diseñada para super
 - `GET /check-ram-usage`: Verifica el uso de RAM del servidor y envía una alerta si se supera el umbral establecido.
 - `POST /send-report/`: Recibe un archivo PDF y lo guarda en el servidor.
 - `GET /top_expensive_queries`: Obtiene las consultas más costosas en términos de uso de recursos.
+- `GET /network_traffic`: Obtiene el tráfico de red del servidor.
+- `GET /locks`: Obtiene los bloqueos de sesiones en el servidor.
 - `GET /`: Devuelve la página principal de la aplicación.
 
 ## Contribuciones
